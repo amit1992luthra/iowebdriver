@@ -1,1 +1,0 @@
-# ecommerce-qa-automation-webDriverIO
