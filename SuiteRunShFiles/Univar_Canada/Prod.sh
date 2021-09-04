@@ -1,11 +1,13 @@
-cd ..
-cd ..
-rmdir reports /q /s
-echo 'Removed Reports Directory'
-set environmentName=Prod
-set appUrl=https://www.univarsolutions.co.uk/
-set countryName=Canada
+#! /bin/sh
 
-call npm run Smoke_Capabilities
+cd ..
+cd ..
+rm -r reports
+
+export environmentName=Prod
+export appUrl=https://www.univarsolutions.com/ca/en
+export countryName=Canada
+
+npm run Smoke_Capabilities
 node_modules\.bin\allure generate reports -o allure-Report/chrome --clean
 

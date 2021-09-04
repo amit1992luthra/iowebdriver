@@ -1,6 +1,5 @@
 "use strict";
 let argv = require('optimist').argv
-let safeActions = require("../../../Utilities/CommonActions.js");
 class PageLevelData {
     constructor(){
         this.orderHistoryPage ={
@@ -10,10 +9,7 @@ class PageLevelData {
             "cancelledOrders": "Cancelled Orders",
             "orderHistory": "Order History"
         }
-        this.commonSuccessMessage ={
-        }
     }
 }
-
 
 module.exports = new PageLevelData();

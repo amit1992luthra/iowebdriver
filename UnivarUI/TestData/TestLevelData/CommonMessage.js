@@ -1,7 +1,6 @@
 "use strict";
 let argv = require('optimist').argv
-let safeActions = require("../../../Utilities/CommonActions.js");
-class testLevelData {
+class commonMessages {
     constructor(){
         this.commonErrorMessage ={
             "thisFieldRequired": "This is a required field.",
@@ -16,5 +15,4 @@ class testLevelData {
     }
 }
 
-
-module.exports = new testLevelData();
+module.exports = new commonMessages();

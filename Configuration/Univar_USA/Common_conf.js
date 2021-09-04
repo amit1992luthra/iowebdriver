@@ -1,14 +1,16 @@
 let browserVersionOptions = {
 	installArgs: {
 		drivers: {
-			chrome: { version: '90.0.4430.24' },
+			//chrome: { version: '90.0.4430.24' },
 			// chrome: { version: '88.0.4324.96' }
+			chrome: { version: '92.0.4515.107' },
 		}
 	},
 	args: {
 		drivers: {
-			chrome: { version: '90.0.4430.24' },
+			// chrome: { version: '90.0.4430.24' },
 			// chrome: { version: '88.0.4324.96' }
+			chrome: { version: '92.0.4515.107' },
 
 		}
 	},
@@ -19,11 +21,12 @@ let Critical_Capabilities = {
 	acceptInsecureCerts: true,
 	maxInstances: 1,
 	specs: [
-		'./UnivarUI/TestSuite/PageActions/*.js',
+		'./UnivarUI/TestSuite/*.js',
 	],
 	'goog:chromeOptions': {
 		args: [
-			'--headless', '--disable-gpu', '--window-size=1280,800',
+			'--headless',
+			'--disable-gpu', '--window-size=1280,800',
 			'disable-infobars', 'disable-popup-blocking',
 			'disable-notifications',]
 
@@ -36,7 +39,7 @@ let Smoke_Capabilities = {
 	acceptInsecureCerts: true,
 	maxInstances: 1,
 	specs: [
-		//'./UnivarUI/TestSuite/Smoke/*.js',
+
 		'./UnivarUI/TestSuite/*.js',
 	],
 	'goog:chromeOptions': {
@@ -56,7 +59,7 @@ let Regression_Capabilities = {
 	acceptInsecureCerts: true,
 	maxInstances: 1,
 	specs: [
-		'./UnivarUI/TestSuite/PageActions/*.js',
+		'./UnivarUI/TestSuite/*.js',
 	],
 	'goog:chromeOptions': {
 		args: [
