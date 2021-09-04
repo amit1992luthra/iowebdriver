@@ -25,7 +25,8 @@ let Critical_Capabilities = {
 	],
 	'goog:chromeOptions': {
 		args: [
-			'--headless', '--disable-gpu', '--window-size=1280,800',
+			'--headless',
+			'--disable-gpu', '--window-size=1280,800',
 			'disable-infobars', 'disable-popup-blocking',
 			'disable-notifications',]
 
@@ -38,7 +39,7 @@ let Smoke_Capabilities = {
 	acceptInsecureCerts: true,
 	maxInstances: 0,
 	specs: [
-		//'./UnivarUI/TestSuite/demo*.js',
+		
 		'./UnivarUI/TestSuite/*.js',
 
 
