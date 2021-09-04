@@ -5,8 +5,8 @@ cd ..
 rm -r reports
 
 export environmentName=QA
-export appUrl=https://shop-qa.univarsolutions.com/ca/en/
-export countryName=Canada
+export appUrl=https://shop-qa.univarsolutions.com/
+export countryName=USA
 
-npm run Regression_Capabilities
+npm run Smoke_Capabilities
 node_modules/.bin/allure generate reports -o allure-Report/chrome --clean

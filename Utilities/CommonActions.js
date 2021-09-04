@@ -1,4 +1,3 @@
-
 "use strict";
 //require("./log4js");
 require("../Utilities/log4js.js");

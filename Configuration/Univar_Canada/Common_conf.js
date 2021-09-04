@@ -21,7 +21,7 @@ let Critical_Capabilities = {
 	acceptInsecureCerts: true,
 	maxInstances: 0,
 	specs: [
-		'./UnivarUI/TestSuite/PageActions/*.js',
+		'./UnivarUI/TestSuite/*.js',
 	],
 	'goog:chromeOptions': {
 		args: [
