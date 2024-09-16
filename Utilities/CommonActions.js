@@ -6,7 +6,7 @@ var expect = require("chai").expect;
 let assert = require("assert");
 const log4js = require("log4js");
 const randomstring = require("randomstring");
-const logger = log4js.getLogger("univar");
+
 
 
 class commonActions {
